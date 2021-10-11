@@ -34,7 +34,7 @@ REQUIRED_FILES = {
     os.path.join('_extras', 'discuss.md'): True,
     os.path.join('_extras', 'guide.md'): True,
     'index.md': True,
-    'reference.md': True,
+    'reference.md': False,
     'setup.md': True,
 }
 
