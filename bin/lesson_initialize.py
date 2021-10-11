@@ -10,7 +10,6 @@ BOILERPLATE = (
     '.travis.yml',
     'AUTHORS',
     'CITATION',
-    'CONTRIBUTING.md',
     'README.md',
     '_config.yml',
     os.path.join('_episodes', '01-introduction.md'),
