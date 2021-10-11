@@ -1,6 +1,4 @@
 ---
-layout: lesson      # DON'T CHANGE THIS.
-root: .
 ---
 {% include main_title.html %}
 
