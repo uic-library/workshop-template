@@ -13,7 +13,7 @@ the pitch.
 <article>
   {{ content }}
 </article>
-{% include syllabus.html %}
+{% include schedule.html %}
 
 
 
