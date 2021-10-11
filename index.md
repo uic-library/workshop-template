@@ -13,8 +13,15 @@ the pitch.
 <article>
   {{ content }}
 </article>
-{% include schedule.html %}
 
+# Workshop Overview 
+
+| Section    | Overview | Duration |
+| ------- | ---------- |
+|0. Setup |Setup R and R Studio | |
+|1. Intro to RStudio| Tour of the RStudio IDE| | 
+|2. Basic tools in R|Basic mathematics | | 
+|3. Something else about R | .....| | 
 
 
 SETUP
