@@ -18,7 +18,6 @@ BOILERPLATE = (
     os.path.join('_extras', 'figures.md'),
     os.path.join('_extras', 'guide.md'),
     'index.md',
-    'reference.md',
     'setup.md',
 )
 
