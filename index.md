@@ -19,6 +19,7 @@ the pitch.
 
 SETUP
 
+{% comment %}
 Delete irrelevant sections from the setup instructions.  Each
 section is inside a 'div' without any classes to make the beginning
 and end easier to find.
