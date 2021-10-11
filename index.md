@@ -3,8 +3,6 @@
 {% include main_title.html %}
 
 
-# Description
-
 Edit the general explanatory paragraph below if you want to change
 the pitch.
 
