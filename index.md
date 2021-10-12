@@ -3,28 +3,40 @@
 
 
 
-Edit the general explanatory paragraph below if you want to change
-the pitch.
+Add workshop description here. Make sure there is a narrative. 
 
 ## Workshop goals
+- Understand the basics of GitHub
+- Use version control 
+- Use Github pages to display workshops
 
+## Setup 
 
 > ## Pre-requisites
->
+> STOP: before starting this workshop, please attend the following Digital Scholarship Lab workshop(s) before completing this one:
+> * [R for Beginners](https://researchguides.uic.edu/hub/workshops)
+> OR make sure you're comfortable with the following concepts (study suggestions in parentheses)
+> * relative and absolute file paths (File paths 101)
+> * markdown editing
+> * git for version control
 > 
 {: .prereq}
 
+Add setup requirements here...
 
 ## Workshop Overview 
 
 | Section    | Overview | Duration |
 | ------- | ---------- |
-|0. Setup |instructions to set up workshop & context (description of data etc.) |0:15 min |
-|1. Part 1| goal of part 1 (should be listed above)| | 
-|2. Part 2|goal of part 2 (should be listed above) | | 
-|3. Part 3| .....| | 
+|Part 1|* goal(s) of part 1 (objectives from Part 1 markdown page)| | 
+|Part 2|* goal of part 2 (objectives from PArt 2 ) | | 
+|Part 3| .....| | 
 
 
-## Recording
+## Workshop Recording
 
 embed recording of workshop here.
+
+## Next Up...
+Check out these workshops after you've completed this one:
+
