@@ -15,8 +15,6 @@ Please mention the data set or materials that will be used in the workshop and b
 - goal #2
 - goal #3
 
-## Setup 
-
 > ## Pre-requisites
 > __STOP:__ before starting this workshop, please attend the following Digital Scholarship Lab workshop(s) before completing this one:
 > * [Workshop Title Here](https://researchguides.uic.edu/hub/workshops)  
@@ -26,12 +24,12 @@ Please mention the data set or materials that will be used in the workshop and b
 > 
 {: .prereq}
 
-Add setup requirements here...
 
-## Workshop Overview 
+## Workshop Content 
 
 | Section    | Overview | Time Estimate |
 | ------- | ---------- |
+|[Setup](_episodes/00-setup)    | download and setup required software. Download data files/other required set up files|0:20 min|
 |Section 1|* goal(s) from section #1(objectives from section 1 page)| | 
 |Section 2|* goal(s) from section #2 (objectives from section 2 page) | | 
 |Section 3| .....| | 
