@@ -18,7 +18,9 @@ Please mention the data set or materials that will be used in the workshop and b
 > ## Pre-requisites
 > __STOP:__ before starting this workshop, please attend the following Digital Scholarship Lab workshop(s) before completing this one:
 > * [Workshop Title Here](https://researchguides.uic.edu/hub/workshops)  
-> _OR_ make sure you're comfortable with the following concepts (study suggestions in parentheses)
+>   
+> _OR_ make sure you're comfortable with the following concepts (study suggestions in parentheses)  
+> 
 > * first pre-requisite ([resource 1]())
 > * second pre-requisite ([resource 2]())
 > 
