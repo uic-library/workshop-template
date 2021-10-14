@@ -1,6 +1,6 @@
 {% include base_path.html %}
-[cc-by-human]: https://creativecommons.org/licenses/by/4.0/
-[cc-by-legal]: https://creativecommons.org/licenses/by/4.0/legalcode
+[cc-by-human]: https://creativecommons.org/licenses/by-sa/4.0/
+[cc-by-legal]: https://creativecommons.org/licenses/by-sa/4.0/legalcode
 [ci]: http://communityin.org/
 [coc-reporting]: https://docs.carpentries.org/topic_folders/policies/incident-reporting.html
 [coc]: https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html
@@ -11,7 +11,8 @@
 [cran-knitr]: https://cran.r-project.org/package=knitr
 [cran-stringr]: https://cran.r-project.org/package=stringr
 [dc-lessons]: http://www.datacarpentry.org/lessons/
-[email]: mailto:team@carpentries.org
+[ds-hub]: https://researchguides.uic.edu/hub
+[email]: mailto:digitalscholarship@uic.edu
 [github-importer]: https://import.github.com/
 [importer]: https://github.com/new/import
 [jekyll-collection]: https://jekyllrb.com/docs/collections/
@@ -20,6 +21,7 @@
 [jekyll]: https://jekyllrb.com/
 [jupyter]: https://jupyter.org/
 [kramdown]: https://kramdown.gettalong.org/
+[library-uic]: https://library.uic.edu/
 [lc-lessons]: https://librarycarpentry.org/lessons/
 [lesson-coc]: {{ relative_root_path }}{% link CODE_OF_CONDUCT.md %}
 [lesson-example]: https://carpentries.github.io/lesson-example/
