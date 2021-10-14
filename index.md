@@ -2,6 +2,7 @@
 layout: lesson
 root: .  # Is the only page that doesn't follow the pattern /:path/index.html
 permalink: index.html  # Is the only page that doesn't follow the pattern /:path/index.html
+boxId: kweltidiq4bv1m9ow12prsuo9x2espsd
 ---
 
 
@@ -42,7 +43,7 @@ Please mention the data set or materials that will be used in the workshop and b
 
 ## Workshop Recording
 
-embed recording of workshop here.
+{% include box_player.html id=page.boxId %}
 
 ## Next Up...
 Check out these workshops after you've completed this one:
