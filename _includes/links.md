@@ -11,6 +11,7 @@
 [cran-knitr]: https://cran.r-project.org/package=knitr
 [cran-stringr]: https://cran.r-project.org/package=stringr
 [dc-lessons]: http://www.datacarpentry.org/lessons/
+[ds-hub]: https://researchguides.uic.edu/hub
 [email]: mailto:digitalscholarship@uic.edu
 [github-importer]: https://import.github.com/
 [importer]: https://github.com/new/import
@@ -20,6 +21,7 @@
 [jekyll]: https://jekyllrb.com/
 [jupyter]: https://jupyter.org/
 [kramdown]: https://kramdown.gettalong.org/
+[library-uic]: https://library.uic.edu/
 [lc-lessons]: https://librarycarpentry.org/lessons/
 [lesson-coc]: {{ relative_root_path }}{% link CODE_OF_CONDUCT.md %}
 [lesson-example]: https://carpentries.github.io/lesson-example/
