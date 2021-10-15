@@ -16,6 +16,28 @@
 
 ## Customizing Your Website (Required Steps)
 
+Before you begin developing your new lesson,
+here are a few things you need to do:
+
+* [ ] Decide on a title for your new lesson!
+  Once you've chosen a new title, you can set the value for `lesson_title`
+  in [`_config.yml`](_config.yml)
+* [ ] Add the URL to your built lesson pages to the repository description\*
+* [ ] [Add relevant topic tags to your lesson repository][cdh-topic-tags].
+* [ ] Fill in the fields marked `FIXME` in:
+  * this README
+  * [`_config.yml`](_config.yml)
+  [ ] FIXME more steps here.
+
+\*Your new website will be rendered at `https://uic-library.github.io/<workshop-repo-name>`. *To set the URL on GitHub, click the gear wheel button next to About on the right of the repository landing page. You will have to manually enter the url even though a repository at https://github.com/uic-library/workshop-repo-name/ will render automatically at the URL https://uic-library.github.io/<workshop-repo-name>.
+
+## Optional but Recommended Steps
+* [ ] Update this README with relevant information about your workshop (see example below)
+  and delete this section
+* [ ] FIXME add more
+
+## Ways to edit in GitHub
+
 There are two ways of customizing your website. You can either:
 
 - edit the files directly in GitHub using your web browser
@@ -69,27 +91,6 @@ Alternatively, you can [download and install the GitHub Desktop application](htt
 \* Highly recommend becoming comfortable using Git in command line at least for adding, commiting, previewing, and pushing changes. It can take a long time for a push to load on GitHub oneline and to be able to see the change to the website.  
 
 
-## How to set up your new workshop in this template
-
-Before you begin developing your new lesson,
-here are a few things you need to do:
-
-* [ ] Decide on a title for your new lesson!
-  Once you've chosen a new title, you can set the value for `lesson_title`
-  in [`_config.yml`](_config.yml)
-* [ ] Add the URL to your built lesson pages to the repository description\*
-* [ ] [Add relevant topic tags to your lesson repository][cdh-topic-tags].
-* [ ] Fill in the fields marked `FIXME` in:
-  * this README
-  * [`_config.yml`](_config.yml)
-  [ ] FIXME more steps here.
-
-\*Your new website will be rendered at `https://uic-library.github.io/<workshop-repo-name>`. *To set the URL on GitHub, click the gear wheel button next to About on the right of the repository landing page. You will have to manually enter the url even though a repository at https://github.com/uic-library/workshop-repo-name/ will render automatically at the URL https://uic-library.github.io/<workshop-repo-name>.
-
-## Optional but Recommended Steps
-* [ ] Update this README with relevant information about your workshop (see example below)
-  and delete this section
-* [ ] FIXME add more
 
 
 
