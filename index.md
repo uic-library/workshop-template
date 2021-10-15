@@ -35,7 +35,7 @@ Additionally, in a second paragraph, please mention the data set or materials th
 
 | Section    | Overview | Time Estimate |
 | ------- | ---------- |
-|[Setup]({{relative_root_path}}_episodes/00-setup/index.html)    | download and setup required software. Download data files/other required set up files|0:20 min|
+|[Setup](https://uic-library.github.io/workshop-template/00-setup/index.html)    | download and setup required software. Download data files/other required set up files|0:20 min|
 |Section 1|* goal(s) from section #1(objectives from section 1 page)| | 
 |Section 2|* goal(s) from section #2 (objectives from section 2 page) | | 
 |Section 3| .....| | 
