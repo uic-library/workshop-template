@@ -24,20 +24,30 @@ here are a few things you need to do:
 
 * [ ] Decide on a title for your new lesson!
   Once you've chosen a new title, you can set the value for `lesson_title`
-  in [`_config.yml`](_config.yml)
+  in [`_config.yml`](_config.yml) \*Note: you do not need to edit anything
+  else in this folder for the time being. 
 * [ ] Add the URL to your built lesson pages to the repository description\*
 * [ ] [Add relevant topic tags to your lesson repository][cdh-topic-tags].
-* [ ] Fill in the fields marked `FIXME` in:
-  * this README
-  * [`_config.yml`](_config.yml)
-  [ ] FIXME more steps here.
+* [ ] make copies to match the number of parts your workshop will have by creating
+  copies of `\_episodes/01-introduction.md`. Files should be named according to 
+  convention: `0X-short-title.md`.
+* [ ] add content to "episode" pages, and style with markdown (see [Carpentries Lesson Example](https://carpentries.github.io/lesson-example/) for styling this template
+* [ ] add images for your workshop content to the `fig` folder. Good convention
+  is naming each image according to the episode file it's located in `0X-short-description.png`
+    \*Note: you can use png and jpeg files, but they are case sensitive, so if your file is .PNG 
+    make sure to use .PNG in the markdown image link. 
+* [ ] add other workshop files to the `files` folder (i.e. data files, script files) \*large data files will need to be zipped or linked to outside source, file size limit is 25 MB. 
+* [ ] Fill in any remaining fields marked `FIXME` in:
+  * index.md
+  * 00-setup.md
+  * reference.md
 
 \*Your new website will be rendered at `https://uic-library.github.io/<workshop-repo-name>`. *To set the URL on GitHub, click the gear wheel button next to About on the right of the repository landing page. You will have to manually enter the url even though a repository at https://github.com/uic-library/workshop-repo-name/ will render automatically at the URL https://uic-library.github.io/<workshop-repo-name>.
 
 ## Optional but Recommended Steps
 * [ ] Update this README with relevant information about your workshop (see example below)
   and delete this section
-* [ ] FIXME add more
+* [ ] Update the `_extras/further-resources.md`
 
 ## Ways to edit in GitHub
 
