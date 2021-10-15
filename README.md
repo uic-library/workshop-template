@@ -10,13 +10,9 @@
 
 3.  Choose UIC Libray as the owner for the repository UNLESS you are just  practicing or playing with the repository (Only Admins can delete repository's in the UIC Library's organization)
 
-4. Please *do your work in the repository's `gh-pages` branch*, since that is what is
-   [automatically published as a website by GitHub][github-project-pages].
+4. Please *do your work in the repository's `gh-pages` branch*, since that is what is automatically published as a website by GitHub.
 
 5.  Please make the repository public internally to UIC Library, leave "Include all branches" unchecked, and click on "Create repository from template". You will be redirected to your new copy of the workshop template respository.
-
-
-If you experience a problem, please [get in touch](#getting-and-giving-help).
 
 ## Customizing Your Website (Required Steps)
 
@@ -27,63 +23,50 @@ There are two ways of customizing your website. You can either:
 
 ### Updating the files on GitHub in your web browser
 
-1.  Go into your newly-created repository,
-    which will be at `https://github.com/your_username/YYYY-MM-DD-site`.
-    For example,
-    if your username is `gvwilson`,
-    the repository's URL will be `https://github.com/gvwilson/
-    2016-12-01-oomza`.
-
-2.  Ensure you are on the gh-pages branch by clicking on the branch under the drop
+1.  Go into your newly-created repository, ensure you are on the gh-pages branch by clicking on the branch under the drop
     down in the menu bar (see the note below):
 
     ![screenshot of this repository's GitHub page showing the "Branch" dropdown menu expanded with the "gh-pages" branch selected](fig/select-gh-pages-branch.png?raw=true)
+2. Use the pencil icon to go into editing mode and make your edits:
+    ![screenshot showing the edit icon in GitHub Pages](fig/edit-index-file-menu-bar.png)
+
+\*Note working on your workshop online is prone to losing edits due to internet outages. Either save very frequently, or edit locally.
 
 ### Working locally
 
-> Note: you don't have to do this, if you have already updated your site using the web interface.
+#### Command Line
 
-
-If you are already familiar with Git, you can clone the repository to your desktop, edit `index.md`,
-`_config.yml`, and `schedule.html` following the instruction above there, and push your changes back to the repository.
+If you are already familiar with Git, you can clone the repository to your desktop, edit your workshop locally, and push your changes back to the repository.
 
 ```shell
-git clone https://github.com/your_username/YYYY-MM-DD-site
+git clone https://github.com/uic-library/workshop-repo-name/
 ```
 
 In order to view your changes once you are done editing, if you have bundler installed (see the
-[installation instructions below](#installing-software)), you can preview your site locally with:
+[installation instructions](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll), you can preview your site locally with:
 
 ```shell
 make serve
 ```
-and go to <http://0.0.0.0:4000> to preview your site.
-
-Before pushing your changes to your repository, we recommend that you also check for any potential
-issues with your site by running:
+for Macs or 
 
 ```shell
-make workshop-check
+bundle exec jekyll serve
 ```
+for Windows
+
+and go to <http://localhost:4000> to preview your site.
+
+If there are any issues with the edits you made, you will get an error message from jekyll. [See common jekyll error messages here](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/troubleshooting-jekyll-build-errors-for-github-pages-sites#file-does-not-exist-in-includes-directory) to help with troubleshooting.  
 
 Once you are satisfied with the edits to your site, commit and push the changes to your repository.
-A few minutes later, you can go to the GitHub Pages URL for your workshop site and preview it. In the example above, this is `https://gvwilson.github.io/2016-12-01-oomza`. [The finished
-page should look something like this](fig/completed-page.png?raw=true).
+A few minutes later, you can go to the GitHub Pages URL for your workshop site and view it. 
 
+#### GitHub Desktop App
 
-    ![screenshot of top menu bar for GitHub's file interface with the edit icon highlighted in the top right](fig/edit-index-file-menu-bar.png?raw=true)
+Alternatively, you can [download and install the GitHub Desktop application](https://desktop.github.com/), though you won't be able to preview edits as you would with the command line. 
 
-    Editing hints are embedded in `index.md`,
-    and full instructions are in [the customization instructions][customization].
-
-
-
-4.  Edit `_config.yml` to customize certain site-wide variables, such as: `carpentry` (to tell your
-    participants the lesson program for your workshop), `curriculum` and `flavor` for the
-    curriculum  taught in your workshop, and `title` (overall title for all pages).
-
-    Editing hints are embedded in `_config.yml`,
-    and full instructions are in [the customization instructions][customization].
+\* Highly recommend becoming comfortable using Git in command line at least for adding, commiting, previewing, and pushing changes. It can take a long time for a push to load on GitHub oneline and to be able to see the change to the website.  
 
 
 ## How to set up your new workshop in this template
@@ -99,35 +82,30 @@ here are a few things you need to do:
 * [ ] Fill in the fields marked `FIXME` in:
   * this README
   * [`_config.yml`](_config.yml)
-* [ ] If you're going to be developing lesson material for the first time
-  according to our design principles,
-  consider reading the [Carpentries Curriculum Development Handbook][cdh]
-* [ ] Consult the [Lesson Example][lesson-example] website to find out more about
-  working with the lesson template
-* [ ] If you are planning to write your lesson in RMarkdown,
-  [create a `main` branch and set this as the default branch in your repository settings][change-default-branch]
-* [ ] Update this README with relevant information about your lesson
-  and delete this section
+  [ ] FIXME more steps here.
 
 \*Your new website will be rendered at `https://uic-library.github.io/<workshop-repo-name>`. *To set the URL on GitHub, click the gear wheel button next to About on the right of the repository landing page. You will have to manually enter the url even though a repository at https://github.com/uic-library/workshop-repo-name/ will render automatically at the URL https://uic-library.github.io/<workshop-repo-name>.
 
 ## Optional but Recommended Steps
+* [ ] Update this README with relevant information about your workshop (see example below)
+  and delete this section
+* [ ] FIXME add more
 
 
 
-### Update the content of the README file
+---------------------------
 
-You can change the `README.md` file in your website's repository, which contains these instructions,
-so that it contains a short description of your workshop and a link to the workshop website.
+FIXME (other info that should go in the readme?)
 
+## Description:
+FIXME
 
+## State of Workshop:
+Still in development? Any major fixes to do?
 
+## Creator(s)
+FIXME (original creator)
+FIXME
+FIXME
 
-
-## Installing Software
-
-If you want to set up Jekyll so that you can preview changes on your own machine before pushing them
-to GitHub, you must install the software described in the lesson example [setup
-instructions](https://carpentries.github.io/lesson-example/setup.html#jekyll-setup-for-lesson-development).
-
-
+This workshop was created using the template at https://github.com/uic-library/workshop-template 
