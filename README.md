@@ -14,7 +14,8 @@
 
 5.  Please make the repository public internally to UIC Library, leave "Include all branches" unchecked, and click on "Create repository from template". You will be redirected to your new copy of the workshop template respository.
 
-6. Read through the [Carpentries Lesson Example](https://carpentries.github.io/lesson-example/) to get an idea of how GitHub Pages works, Markdown styling and GitHub, and basics of how our template works (\*Note, some of the information is NOT relevant to our template setup, specifically - DO NOT run the 'bin/lesson_initialize.py` file as instructed in several places. This has been replaced by GitHub's "Use this template" feature.)
+6. Read through the [Carpentries Lesson Example](https://carpentries.github.io/lesson-example/) to get an idea of how GitHub Pages works, Markdown styling and GitHub, and basics of how our template works (\*Note, some of the information is NOT relevant to our template setup. Specifically, DO NOT run the `bin/lesson_initialize.py` file as instructed in several places. This has been replaced by GitHub's "Use this template" feature.)
+    - The GitHub, Markdown, and Jekyll, Lesson Organization, Formatting, Style Guide sections will be the most useful.
 
 ## Customizing Your Website (Required Steps)
 
