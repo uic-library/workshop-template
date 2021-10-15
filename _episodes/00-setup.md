@@ -21,38 +21,23 @@ keypoints:
 - "Workshop data is from x, in y format and includes x,y,z types of data"
 ---
 
-## Prequistes
-
-There is no previous knowledge necessary to participate in this workshop
-
-OR
-
-Take or complete the following workshop(s) offered by the Digital Scholarship lab to 
-participate in this workshop:
-
-* x
-* y
-
-Or, review or self-teach the following topics before particpating:
-* x
-* y
-* z
-
-Suggestions of materials to review to cover prequisites:
-
-* x
-* y
-* z
-
 ## Software setup
 
-automate software install instructions
+{% comment %} automated software install instructions, add instructions from \_includes/install_instructions 
+by using code {% include install_instructions/filename.html} {% endcomment%}
+
+FIXME add install instructions
+
+{% include install_instructions/editor.html %}
+{% include install_instructions/videoconferencing.html %}
 
 ## Setup files
 
 Please download the following files to particpate in the workshop:
 
-## Data Context
+FIXME link to setup files in `files` folder
+
+## Data
 
 (if the workshop uses data)
 
