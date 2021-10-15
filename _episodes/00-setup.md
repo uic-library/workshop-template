@@ -24,7 +24,7 @@ keypoints:
 ## Software setup
 
 {% comment %} automated software install instructions, add instructions from \_includes/install_instructions 
-by using code {% include install_instructions/filename.html} {% endcomment%}
+by using code {% include install_instructions/filename.html} {% endcomment %}
 
 FIXME add install instructions
 
