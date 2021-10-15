@@ -2,28 +2,31 @@
 # Values for this workshop.
 #------------------------------------------------------------
 
-# Overall title for the Workshop.
-# This variable is used to (optionally) add a title in the "jumbotron"
-# (the grey box at the top of the page), and to the extra pages.
-# Most workshops don't use extra pages. More information about extra
-# pages are included in the README:
-# https://github.com/carpentries/workshop-template#creating-extra-pages
-title: "FIXME Workshop Title"
+--------------------------------------------------------------------
 
+# IGNORE THE FOLLOWING:
+carpentry: "swc"
+
+--------------------------------------------------------
 # Life cycle stage of the lesson
 # See this page for more details: https://cdh.carpentries.org/the-lesson-life-cycle.html
 # Possible values: "pre-alpha", "alpha", "beta", "stable"
 # Default is "pre-alpha" for new workshops
 life_cycle: "pre-alpha"
-
---------------------------------------------------------------------
-
-# IGNORE THE FOLLOWING:
-carpentry: "swc"
+----------------------------------------------------
+# IGNORE THE NEXT 3
 curriculum: "FIXME"
 flavor: "FIXME"
 pilot: false
+
+-----------------------------------------------------
+# EDIT HERE
+
+# Overall title for the Workshop.
 kind: "lesson"
+
+---------------------------------------------------------
+# IGNORE THE REST
 
 # Magic to make URLs resolve both locally and on GitHub.
 # See https://help.github.com/articles/repository-metadata-on-github-pages/.
