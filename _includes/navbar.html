@@ -74,9 +74,7 @@
         <li class="dropdown">
           <a href="{{ relative_root_path }}/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Extras <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="{{ relative_root_path }}{% link _extras/about.md %}">About</a></li>
             <li><a href="{{ relative_root_path }}{% link reference.md %}">References</a></li>
-            <li><a href="{{ relative_root_path }}{% link _extras/further-resources.md %}">Further Resources</a></li>
             {% for lesson_extra in lesson_extras %}
             {% if site.extras_order %}
               {% assign extra = site.extras | where: "slug", lesson_extra | first %}
