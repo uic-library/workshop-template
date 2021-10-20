@@ -42,6 +42,7 @@ here are a few things you need to do:
   * 00-setup.md
   * reference.md
 * [ ] add the workshop recording by navigating to where it's located in Box, copy the ID from the video sharelink (see image below) and paste into the BoxId field in the yaml in index.md
+![Copy ID from Box Share Link for Recordings](fig/sharelink-boxId.PNG)
   * Alternatively, if there is no recording ready to post, comment out the recording section with `{% comment %}` and '{% endcomment %} until it is completed
 
 \*Your new website will be rendered at `https://uic-library.github.io/<workshop-repo-name>`. *To set the URL on GitHub, click the gear wheel button next to About on the right of the repository landing page. You will have to manually enter the url even though a repository at https://github.com/uic-library/workshop-repo-name/ will render automatically at the URL https://uic-library.github.io/<workshop-repo-name>.
