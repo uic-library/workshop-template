@@ -41,12 +41,15 @@ here are a few things you need to do:
   * index.md
   * 00-setup.md
   * reference.md
+* [ ] add the workshop recording by navigating to where it's located in Box, copy the ID from the video url (see image below) and paste into the BoxId field in the yaml in index.md
+  * Alternatively, if there is no recording ready to post, comment out the recording section with `{% comment %}` and '{% endcomment %} until it is completed
 
 \*Your new website will be rendered at `https://uic-library.github.io/<workshop-repo-name>`. *To set the URL on GitHub, click the gear wheel button next to About on the right of the repository landing page. You will have to manually enter the url even though a repository at https://github.com/uic-library/workshop-repo-name/ will render automatically at the URL https://uic-library.github.io/<workshop-repo-name>.
 
 ## Optional but Recommended Steps
 * [ ] Update this README with relevant information about your workshop (see example below)
   and delete this section
+* [ ] delete the images in fig related to the README
 * [ ] Update the `_extras/further-resources.md`
 
 ## Ways to edit in GitHub
