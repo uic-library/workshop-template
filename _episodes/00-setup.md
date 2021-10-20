@@ -23,10 +23,10 @@ keypoints:
 
 ## Software setup
 
-{% comment %} automated software install instructions, add instructions from \_includes/install_instructions 
-by using code seen below {% endcomment %}
+FIXME add/edit  install instructions (automated, see comment)
 
-FIXME add/edit  install instructions
+{% comment %} to add automated software install instructions, add instructions available in the install instructions 
+folder \_includes/install_instructions by using code seen below. Add or remove install instructions as needed. {% endcomment %}
 
 {% include install_instructions/editor.html %}
 {% include install_instructions/videoconferencing.html %}
@@ -35,16 +35,14 @@ FIXME add/edit  install instructions
 
 Please download the following files to particpate in the workshop:
 
-FIXME link to setup files in `files` folder
+FIXME add links to setup files in `files` folder OR if there are many files, zip setup files, add to `files` folder
+and add link to zip file here
 
 ## Data
 
 (if the workshop uses data)
 
-Description of data
-
-Data format:
-
-
+FIXME add intro/description of data. Including file format and any disciplinary background needed to understand
+why the data is gathered and how it is used.
 
 {% include links.md %}
