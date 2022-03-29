@@ -1,3 +1,10 @@
+---
+title: "Citation"
+layout: page
+---
+
+{% include gh_variables.html %}
+
 Please cite this workshop as:
 
 UIC Library: {{ site.title }}  Version
