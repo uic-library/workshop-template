@@ -1,16 +1,4 @@
----
-title: "Citation"
-layout: page
----
-
-{% include gh_variables.html %}
-
-Please cite this workshop as:
-
-UIC Library: {{ site.title }}  Version
-2021.01, October 2021, {{ site.url}}
-
-Please cite the workshop template as:
+Please cite this repository as:
 
 UIC Library: "UIC Library: Digital Scholarship Hub Workshop Template." 
-Version 2021.01, October 2021, https://github.com/uic-library/workshop-template
+Version 2, March 2022, https://github.com/uic-library/workshop-template
