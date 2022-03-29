@@ -5,9 +5,8 @@ title: "Licenses"
 ## Instructional Material
 
 All UIC Library - Digital Scholarship Hub instructional materials are
-made available under the [Creative Commons Attribution ShareAlike
-license][cc-by-human]. The following is a human-readable summary of
-(and not a substitute for) the [full legal text of the CC-BY-SA 4.0
+made available under the [Creative Commons Attribution license][cc-by-human]. The following is a human-readable summary of
+(and not a substitute for) the [full legal text of the CC-BY 4.0
 license][cc-by-legal].
 
 You are free:
@@ -28,8 +27,6 @@ Under the following terms:
   license][cc-by-human], and indicate if changes were made. You may do
   so in any reasonable manner, but not in any way that suggests the
   licensor endorses you or your use.
-* **ShareAlike**---If you remix, transform, or build upon this material, 
-  you must distribute your contributions under the same license as the original.
 
 **No additional restrictions**---You may not apply legal terms or
 technological measures that legally restrict others from doing
@@ -71,8 +68,8 @@ LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-[cc-by-human]: https://creativecommons.org/licenses/by-sa/4.0/
-[cc-by-legal]: https://creativecommons.org/licenses/by-sa/4.0/legalcode
+[cc-by-human]: https://creativecommons.org/licenses/by/4.0/
+[cc-by-legal]: https://creativecommons.org/licenses/by/4.0/legalcode
 [mit-license]: https://opensource.org/licenses/mit-license.html
 [ci]: http://communityin.org/
 [osi]: https://opensource.org
