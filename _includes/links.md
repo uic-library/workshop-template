@@ -1,6 +1,6 @@
 {% include base_path.html %}
-[cc-by-human]: https://creativecommons.org/licenses/by-sa/4.0/
-[cc-by-legal]: https://creativecommons.org/licenses/by-sa/4.0/legalcode
+[cc-by-human]: https://creativecommons.org/licenses/by/4.0/
+[cc-by-legal]: https://creativecommons.org/licenses/by/4.0/legalcode
 [ci]: http://communityin.org/
 [coc-reporting]: https://docs.carpentries.org/topic_folders/policies/incident-reporting.html
 [coc]: https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html
@@ -12,7 +12,7 @@
 [cran-stringr]: https://cran.r-project.org/package=stringr
 [dc-lessons]: http://www.datacarpentry.org/lessons/
 [ds-hub]: https://researchguides.uic.edu/hub
-[email]: mailto:digitalscholarship@uic.edu
+[email]: mailto:digscholarship@uic.edu
 [github-importer]: https://import.github.com/
 [importer]: https://github.com/new/import
 [jekyll-collection]: https://jekyllrb.com/docs/collections/
