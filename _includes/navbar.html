@@ -16,16 +16,19 @@
       </button>
 
       {% comment %} Show UIC logo. {% endcomment %}
-      
       <a href="{{ site.uic }}" class="pull-left">
         <img class="navbar-logo" src="{{ relative_root_path }}{% link /assets/img/CAMP.CIRC.SM.RGB.SVG %}" alt="UIC logo" />
       </a>
+
       {% comment %} Always show link to home page. {% endcomment %}
       <a class="navbar-brand" href="{{ relative_root_path }}{% link index.md %}">Home</a>
 
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav"> 
+        {% comment %} Link to Setup Instructions {% endcomment %}
+        <li><a href="{{ relative_root_path }}/setup.index.html">Setup</a></li>
+        
         {% comment %} Show episodes. {% endcomment %}
         {% if lesson_episodes.size > 0 %}
         <li class="dropdown">
@@ -40,32 +43,25 @@
             <li><a href="{{ relative_root_path }}{{ episode.url }}">{{ episode.title }}</a></li>
             {% endfor %}
 	    <li role="separator" class="divider"></li>
-            <li><a href="{{ relative_root_path }}{% link aio.md %}">All in one page (Beta)</a></li>
+            <li><a href="{{ relative_root_path }}{% link aio.md %}">All in one page</a></li>
           </ul>
         </li>
         {% endif %}
 
+        {% comment %} Show More Resources {% endcomment %}
+        <li><a href="{{ relative_root_path }}/more-resources">Additional Resources</a></li>
+
 	{% comment %} Show extras {% endcomment %}
         <li class="dropdown">
-          <a href="{{ relative_root_path }}/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Extras <span class="caret"></span></a>
+          <a href="{{ relative_root_path }}/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="{{ relative_root_path }}{% link reference.md %}">References</a></li>
-            {% for lesson_extra in lesson_extras %}
-            {% if site.extras_order %}
-              {% assign extra = site.extras | where: "slug", lesson_extra | first %}
-            {% else %}
-              {% assign extra = lesson_extra %}
-            {% endif %}
+            <li><a href="https://researchguides.uic.edu/hub/home" target="_blank">Digital Scholarship Hub <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></li>
+            <li><a href="{{ relative_root_path }}/reference">References</a></li>
+            <li><a href="{{ relative_root_path }}/LICENSE">Reuse</a></li>
             <li><a href="{{ relative_root_path }}{{ extra.url }}">{{ extra.title }}</a></li>
-            {% endfor %}
           </ul>
         </li>
 
-	{% comment %} Always show license. {% endcomment %}
-        <li><a href="{{ relative_root_path }}{% link LICENSE.md %}">License</a></li>
-        {% comment %} Always show license. {% endcomment %}
-  {% comment %} link back to digital scholarship hub homepage {% endcomment %}
-        <li><a href="https://researchguides.uic.edu/hub/home" target="_blank">Digital Scholarship Hub <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></li>
 	{% comment %} comment out code for "improve this page"
     {% if page.source %}
 	    {% if page.source == "Rmd" %}
