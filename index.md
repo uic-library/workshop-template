@@ -30,7 +30,10 @@ Additionally, in a second paragraph, please mention the data set or materials th
 > 
 {: .prereq}
 
+{% include syllabus.html %}
 
+{% comment %}
+Comment out while testing
 ## Workshop Content 
 
 | Section    | Overview | Time Estimate |
@@ -40,6 +43,7 @@ Additionally, in a second paragraph, please mention the data set or materials th
 |Section 2|* goal(s) from section #2 (objectives from section 2 page) | | 
 |Section 3| .....| | 
 
+{% endcomment %}
 
 ## Workshop Recording
 
