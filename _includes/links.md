@@ -20,7 +20,7 @@
 [library-uic]: https://library.uic.edu/
 [lc-lessons]: https://librarycarpentry.org/lessons/
 [lesson-example]: https://carpentries.github.io/lesson-example/
-[lesson-license]: {{ relative_root_path }}{% link LICENSE.md %}
+[lesson-license]: {{ relative_root_path }}/license
 [lesson-mainpage]: {{ relative_root_path }}{% link index.md %}
 [mit-license]: https://opensource.org/licenses/mit-license.html
 [morea]: https://morea-framework.github.io/
