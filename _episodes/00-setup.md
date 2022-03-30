@@ -36,17 +36,17 @@ folder \_includes/install_instructions by using code seen below. Add or remove i
 
 Please download the following files to particpate in the workshop:
 
-FIXME data: 
-FIXME script: 
+[ADD DOWNLOAD LINK] data: 
+[ADD DOWNLOAD LINK] script: 
 
-FIXME add links to setup files in `files` folder OR if there are many files, zip setup files, add to `files` folder
+ADD links to setup files in `files` folder OR if there are many files, zip setup files, add to `files` folder
 and add link to zip file here
 
 ## About the Data Used in this Workshop:
 
 (if the workshop uses data)
 
-FIXME add intro/description of data. Including file format and any disciplinary background needed to understand
+ADD intro/description of data. Including file format and any disciplinary background needed to understand
 why the data is gathered and how it is used.
 
-{% include links.md %}
+

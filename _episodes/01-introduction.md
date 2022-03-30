@@ -9,7 +9,7 @@ objectives:
 keypoints:
 - "First key point. Brief Answer to questions. (FIXME)"
 ---
-FIXME
+DELETE THIS AND ADD CONTENT HERE
 
-{% include links.md %}
+
 
