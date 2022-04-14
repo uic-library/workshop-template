@@ -16,6 +16,61 @@ permalink: /customization/index.html
 * Markdown (some basic links)
 * Edit in `gh-pages` branch
 * More on GitHub Pages
+* Relative paths
+
+### How to edit GitHub Pages
+
+There are two ways of customizing your website. You can either:
+
+- edit the files directly in GitHub using your web browser
+- clone the repository on your computer and update the files locally
+
+### Updating the files on GitHub in your web browser
+
+1.  Go into your newly-created repository, ensure you are on the gh-pages branch by clicking on the branch under the drop
+    down in the menu bar (see the note below):
+
+    ![screenshot of this repository's GitHub page showing the "Branch" dropdown menu expanded with the "gh-pages" branch selected](../fig/select-gh-pages-branch.png?raw=true)
+2. Use the pencil icon to go into editing mode and make your edits:
+    ![screenshot showing the edit icon in GitHub Pages](../fig/edit-index-file-menu-bar.png)
+
+\*Note working on your workshop online is prone to losing edits due to internet outages. Either save very frequently, or edit locally.
+
+### Working locally
+
+#### Command Line
+
+If you are already familiar with Git, you can clone the repository to your desktop, edit your workshop locally, and push your changes back to the repository.
+
+```shell
+git clone https://github.com/uic-library/workshop-repo-name/
+```
+
+In order to view your changes once you are done editing, if you have bundler installed (see the
+[installation instructions](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll), you can preview your site locally with:
+
+```shell
+make serve
+```
+for Macs or 
+
+```shell
+bundle exec jekyll serve
+```
+for Windows
+
+and go to <http://localhost:4000> to preview your site.
+
+If there are any issues with the edits you made, you will get an error message from jekyll. [See common jekyll error messages here](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/troubleshooting-jekyll-build-errors-for-github-pages-sites#file-does-not-exist-in-includes-directory) to help with troubleshooting.  
+
+Once you are satisfied with the edits to your site, commit and push the changes to your repository.
+A few minutes later, you can go to the GitHub Pages URL for your workshop site and view it. 
+
+#### GitHub Desktop App
+
+Alternatively, you can [download and install the GitHub Desktop application](https://desktop.github.com/), though you won't be able to preview edits as you would with the command line. 
+
+\* Highly recommend becoming comfortable using Git in command line at least for adding, commiting, previewing, and pushing changes. It can take a long time for a push to load on GitHub oneline and to be able to see the change to the website.  
 
 ### Files to edit
 
@@ -180,6 +235,17 @@ in the `_includes/install_instructions` folder.
     \*Note: you can use png and jpeg files, but they are case sensitive, so if your file is .PNG 
     make sure to use .PNG in the markdown image link. 
 * [ ] add other workshop files to the `files` folder (i.e. data files, script files) \*large data files will need to be zipped or linked to outside source, file size limit is 25 MB.
+
+## Images
+
+* [ ] add images for your workshop content to the `fig` folder. Good convention
+  is naming each image according to the episode file it's located in `0X-short-description.png`
+    \*Note: you can use png and jpeg files, but they are case sensitive, so if your file is .PNG 
+    make sure to use .PNG in the markdown image link. 
+
+## Files (setup files, scripts, data files etc.)
+
+* [ ] add other workshop files to the `files` folder (i.e. data files, script files) \*large data files will need to be zipped or linked to outside source, file size limit is 25 MB. 
 
 ## Additional Resources
 
