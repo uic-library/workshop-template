@@ -9,163 +9,77 @@ permalink: /customization/index.html
 * TOC
 {:toc}
 
+## GitHub Pages Workshop Website Setup
+
+### Basics of GitHub Pages
+
+* Markdown (some basic links)
+* Edit in `gh-pages` branch
+* More on GitHub Pages
+
+### Files to edit
+
+FIXME add picture of the files to edit
+
+### Using the workshop template
+
+1.  Log in to GitHub.
+    You must be logged in for the remaining steps to work.
+
+2.  On this page (<https://github.com/uic-library/workshop-template>),
+    click on the green "Use this template" button (top right). **Please _do not fork this repository directly on GitHub._**
+
+3.  Choose UIC Libray as the owner for the repository UNLESS you are just  practicing or practicing with the repository (Only Admins can delete repository's in the UIC Library's organization)
+
+### Site URL
+
+GitHub Pages sites are formatted as `https://GITHUB_USERNAME.github.io/REPOSITORY_NAME`.
+For example, if the URL for your repository is `https://github.com/uic-library/Introduction-Digital-Scholarship`,
+the URL for its website will be `http://uic-library.github.io/Introduction-Digital-Scholarship`.
+
+* [] Set the site url: Your new website will be rendered at `https://uic-library.github.io/<workshop-repo-name>`. *To set the URL on GitHub, click the gear wheel button next to About on the right of the repository landing page. You will have to manually enter the url even though a repository at https://github.com/uic-library/workshop-repo-name/ will render automatically at the URL https://uic-library.github.io/<workshop-repo-name>.
+* [] Add a description of the workshop
+* [ ] [Add relevant topic tags to your lesson repository][cdh-topic-tags].
+
+FIXME add image of this section
+
+
 ## Configuration File `_config.yml`
 
 You should edit the `_config.yml` configuration file in the root directory of your workshop to
 configure some site-wide variables and make the site function correctly:
 
-* `carpentry` - to tell us which carpentry workshop this is. Possible values are:
-    - `"swc"` for Software Carpentry workshops,
-    - `"dc"` for Data Carpentry workshops,
-    - `"lc"` for Library Carpentry workshops, and
-    - `"cp"` for general Carpentries events such as instructor trainings (for which you should use
-      <https://github.com/carpentries/training-template> as the website template).
-    - `"incubator"` for workshops teaching a lesson in The Carpentries Incubator.
-* `curriculum` - to tell us which curriculum is being taught.
-  At the moment, applicable to Software and Data Carpentry workshops only.
-  Possible values are:
-    - `"dc-ecology"`, `"dc-genomics"`, `"dc-socsci"`, or `"dc-geospatial"` for Data Carpentry
-      workshops
-    - `"swc-inflammation"` or `"swc-gapminder"` for Software Carpentry workshops.
-* `flavor` - `"r"` or `"python"` depending on which lessons are being taught at the workshop
-  (currently only for Data Carpentry and Software Carpentry workshops).
-* `pilot` - set this to `true` if the workshop will be a lesson pilot
-  (of a new official lesson or a lesson in The Carpentries Incubator).
 * `title` - overall title for the workshop. If set (i.e., different from "Workshop Title" or empty),
   it will appear in the "jumbotron" (the gray box at the top of the page). This variable is also
   used for the title of the extra pages. The README contains [more information about extra pages](https://github.com/carpentries/workshop-template#creating-extra-pages).
 
-For workshops teaching lessons in The Carpentries Incubator,
-i.e. where `carpentry` is set to `incubator`,
-you should uncomment the following three fields in
-`_config.yml`:
-
-* `incubator_lesson_site` - the URL of the lesson pages that will be taught at the workshop.
-* `incubator_pre_survey` - the URL of the pre-workshop survey you have prepared for the pilot workshop. (The standard Carpentries pre- and post-workshop surveys should not be used for Incubator workshops.)
-* `incubator_post_survey` - the URL of the post-workshop survey you have prepared for the pilot workshop.
-
-## Site URL
-
-GitHub Pages sites are formatted as `https://GITHUB_USERNAME.github.io/REPOSITORY_NAME`.
-For example, if the URL for your repository is `https://github.com/gvwilson/2015-07-01-oomza`,
-the URL for its website will be `http://gvwilson.github.io/2015-07-01-oomza`.
+* `life-cycle` - The current development state of the workshop. 
+ Possible values: "pre-alpha", "alpha", "beta", "stable"
+ "pre-alpha" for the beginning stages of designing a workshop
+ "alpha" after content has been added, but needs to be reviewed or tested 
+ "beta" ready to teach for the first time, editing stage after first taught
+ "stable" workshop has been taught and modifications made if necessary, little
+ to no editing required at this stage.
 
 You should not need to modify any of the other variable values in `_config.yml`.
 
-## Home Page (`index.md`): data in the YAML header
+## Home Page (`index.md`)
 
 Your workshop's home page lives in `index.md`,
 which must define the values below in its header.
-If your workshop is taught online, see the
-[online workshops section](#for-online-workshops) for customization
-options.
-
-*   `layout` must be `workshop`.
-
-*   `venue` is the short name of the institution or group hosting the
-    workshop, like "Euphoric State University".  It should *not*
-    include the address or other details, since this value is
-    displayed in a table on websites (e.g.,
-    <https://carpentries.org/upcoming_workshops/>). See section
-    below for value to use for online workshops.
-
-*   `address` is the workshop's address (including details like the
-    room number). The address should be all on one line.
-    See section below for value to use for online workshops.
-
-*   `country` must be a two-letter ISO-3166 code for the country in
-    which the workshop is going to take place, such as "fr" (for
-    France) or "nz" (for New Zealand) - see [ISO-3166 codes on Wikipedia](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements)
-    for a complete list. See section below for value to use for
-    online workshops.
-
-*   `language` is the language that will be used in the workshop.
-    It must be an [ISO 639-1 code](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes).
-    Note that two-letter codes mean different things for countries
-    and languages: "ar" is Arabic when used for a language, but
-    Argentina when used for a country.
-
-*   `latitude` and `longitude` are the latitude and longitude of the workshop
-    site (so we can put a pin on our map). You can use
-    [LatLong.net](https://www.latlong.net/) to find these values.
-    See section below for value to use for online workshops.
-
-*  `humandate` is the human-friendly start and end date for the
-    workshop.  Please use three-letter month names and abbreviations
-    (e.g., `Jul` instead of `July`), since these values are displayed
-    in a table on our websites.  (Strictly speaking this information
-    is redundant, since we require a machine-readable `startdate` and
-    `enddate`, but reliably translating those into human-readable
-    dates is an interesting challenge...)
-
-*   `humantime` is the human-friendly start and end time for each day of
-    the workshop, e.g., "09:00 am - 4:00 pm" or "09:00-16:00".  (We
-    recognize that we ought to allow different start or end times on
-    different days, but going down that path leads eventually to
-    embedding iCal date/time specifications in our headers, which in
-    turn leads to madness...)
-
-*   `startdate` is the workshop's starting date in YYYY-MM-DD format,
-    such as `2015-07-01`.  You must use four digits for the year and
-    two each for the month and day.
-
-*   `enddate` is the workshop's ending date in the same format.  If your
-    workshop is only one day long, the `enddate` field should be deleted.
-    If your workshop has a more complicated schedule (e.g., a half day a
-    week for four weeks), please delete the `enddate` field and only tell
-    us its start date.
-
-*   `instructor` is a comma-separated list of instructor names.  The
-    list must be enclosed in square brackets, and each name must be in
-    double quotes, as in `["Alan Turing","Grace Hopper"]`.  Do not
-    include other information (such as the word "instructor") in these
-    values.
-
-*   `helper` is a comma-separated list of helper names formatted in the
-    same way as the instructor names.  If there are no helpers, use an
-    empty list `[]`.
-
-*   `contact` is the contact email address to use for your workshop.
-    If you do not provide a contact email address, your website will
-    display the address for the workshop coordinators (who probably
-    won't be able to answer questions about the specific details of
-    your workshop).
-
-The header may optionally define the following:
-
-*   `collaborative_notes` is the URL for the Etherpad for your workshop.
-    If you are not using an Etherpad, you can delete this line. You can
-    [create a carpentries etherpad here](https://pad.carpentries.org/).
-
-*   `eventbrite` is the multi-digit Eventbrite registration key.  If you
-    are using Eventbrite, the Carpentries Regional Coordinators will
-    give this to you.  If you are using something else, you may delete
-    this line.  Note: this value must be given as a string in double
-    quotes, rather than as a number.
 
 ### For online workshops
 
 If the workshop is online, follow the same instructions as above with the
 following modifications:
 
-* `venue`: Use the name of the institution that organizes the workshop and do
-  not include a mention that it is an online workshop.
-* `address`: If you can safely share the URL for the videoconferencing, you may
-  list it here (it must start with `http` or `https`); if you cannot or prefer
-  to not share the videoconferencing information, use the value `online`.
-* `country`: Please use the country associated with the host institution for the
-  workshop.
-* `latitude` and `longitude`: if it makes sense, use the coordinates for the
-  host institution. If it does not, use `0` for both the latitude and the
-  longitude.
+### Home Page: Description
 
-By default, the Setup Instructions will list the installation instructions for the
-videoconferencing service Zoom.
-If you use a different videoconferencing service,
-you can edit the file in `_includes/install_instructions/videoconferencing.html`
-to include the relevant installation instructions.
+### Home Page: Goals
 
-## Home Page: Schedule
+### Home Page: Pre-requisites
+
+### Home Page: Workshop Content
 
 By default, the template displays the typical schedule for your workshop based on
 the values of the variables set in the `_config.yml`. If you need to  make
@@ -191,22 +105,22 @@ The lesson homepage will contain estimated timings for teaching the lesson.
 Use the approach described above for `_includes/custome-schedule.html`
 if you would like to create a schedule table to replace this text.
 
-## Home Page: Setup Instructions
+### Home Page: Recording
 
-If you need assistance with customizing the setup instructions for your website,
-feel free to ask your questions in the Carpentries
-[Instructors Slack channel](https://swcarpentry.slack.com/archives/C08BVNU00)
-([join The Carpentries Slack workspace](https://swc-slack-invite.herokuapp.com/)).
+* [ ] add the workshop recording by navigating to where it's located in Box, copy the ID from the video sharelink (see image below) and paste into the BoxId field in the yaml in index.md
+![Copy ID from Box Share Link for Recordings](fig/sharelink-boxId.PNG)
+  * Alternatively, if there is no recording ready to post, comment out the recording section with `{% comment %}` and `{% endcomment %}` until there is a recording to add.
 
-### Software Carpentry workshops
+### Home Page: Survey
 
-#### Default settings
+Change out the survey link each semester so the correct survey is linked on the page.
 
-For Software Carpentry workshops,
-setting the `flavor` variable in `_config.yml` to `r` or `python`
-will include the respective installation instructions for these tools.
-Additionally, by default, the installation instructions for
-a text editor, the Bash shell, and Git are included.
+### Home Page: Next up
+
+Link related workshops that students can take next with a link []():
+i.e. [Next Workshop](https://uic-library.github.io/next-workshop)
+
+## Setup Page
 
 #### If you need to remove tools
 
@@ -255,22 +169,23 @@ you can add `{% raw %}{% include install_instructions/<filename.html> %}{% endra
 where `<filename.html>` needs to be replaced by one of the files
 in the `_includes/install_instructions` folder.
 
-## Homepage: who can attend?
+## Episodes
 
-If you want to specify who can attend the workshop you are advertising,
-there is a commented-out section in `index.md` that you can use to
-inform workshop website visitors of who can attend the event.
-You may want to specify that only members of your university,
-department, etc. can attend or that the event is open to the public.
-We don't provide templated text for this as each situation is different.
-We do provide a section, called "Who can attend?" for you to specify this
-information.
+* [ ] make copies to match the number of parts your workshop will have by creating
+  copies of `\_episodes/01-introduction.md`. Files should be named according to 
+  convention: `0X-short-title.md`.
+* [ ] add content to "episode" pages, and style with markdown (see [Carpentries Lesson Example](https://carpentries.github.io/lesson-example/) for styling this template
+* [ ] add images for your workshop content to the `fig` folder. Good convention
+  is naming each image according to the episode file it's located in `0X-short-description.png`
+    \*Note: you can use png and jpeg files, but they are case sensitive, so if your file is .PNG 
+    make sure to use .PNG in the markdown image link. 
+* [ ] add other workshop files to the `files` folder (i.e. data files, script files) \*large data files will need to be zipped or linked to outside source, file size limit is 25 MB.
 
-To use it, move the {% raw %}{% endcomment %}{% endraw %} line above the
-`<p>` tag marking the beginning of this section and edit the paragraph
-to reflect the attendance policy for your workshop.
+## Additional Resources
 
-## Updating the repository
+## References
+
+## Troubleshooting -- FIXME if transferring to UIC Library gets messed up
 
 If for some reason,
 such as the installation instructions having become disconnected
