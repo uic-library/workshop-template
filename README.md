@@ -8,14 +8,13 @@
 2.  On this page (<https://github.com/uic-library/workshop-template>),
     click on the green "Use this template" button (top right). **Please _do not fork this repository directly on GitHub._**
 
-3.  Choose UIC Libray as the owner for the repository UNLESS you are just  practicing or playing with the repository (Only Admins can delete repository's in the UIC Library's organization)
+3.  Choose UIC Libray as the owner for the repository UNLESS you are just  practicing or practicing with the repository (Only Admins can delete repository's in the UIC Library's organization)
 
 4. Please *do your work in the repository's `gh-pages` branch*, since that is what is automatically published as a website by GitHub.
 
 5.  Please make the repository public internally to UIC Library, leave "Include all branches" unchecked, and click on "Create repository from template". You will be redirected to your new copy of the workshop template respository.
 
-6. Read through the [Carpentries Lesson Example](https://carpentries.github.io/lesson-example/) to get an idea of how GitHub Pages works, Markdown styling and GitHub, and basics of how our template works (\*Note, some of the information is NOT relevant to our template setup. Specifically, DO NOT run the `bin/lesson_initialize.py` file as instructed in several places. This has been replaced by GitHub's "Use this template" feature.)
-    - The GitHub, Markdown, and Jekyll, Lesson Organization, Formatting, Style Guide sections will be the most useful.
+6. Read through the customization page to learn how to step up your workshop site
 
 ## Customizing Your Website (Required Steps)
 
