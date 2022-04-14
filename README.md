@@ -5,7 +5,7 @@
 1.  Log in to GitHub.
     You must be logged in for the remaining steps to work.
 
-2.  On this page (<https://github.com/carpentries/workshop-template>),
+2.  On this page (<https://github.com/uic-library/workshop-template>),
     click on the green "Use this template" button (top right). **Please _do not fork this repository directly on GitHub._**
 
 3.  Choose UIC Libray as the owner for the repository UNLESS you are just  practicing or playing with the repository (Only Admins can delete repository's in the UIC Library's organization)
