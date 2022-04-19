@@ -9,16 +9,31 @@ permalink: /customization/index.html
 * TOC
 {:toc}
 
-## GitHub Pages Workshop Website Setup
+## Introduction
 
-### Basics of GitHub Pages
+The following instructions walk through the set up steps to create a new workshop for the Digital Scholarship Hub using GitHub Pages. This workshop template is most appropriate for workshops teaching coding as the template contains styling elements for different coding languages including R, Python, BASH, SQL etc. 
 
-* Markdown (some basic links)
-* Edit in `gh-pages` branch
-* More on GitHub Pages
+### Necessary Tools
+
+#### GitHub Account
+
+You need to have a GitHub account. Create a GitHub account at [github.com](github.com). Send an email to lib-sys@uic.edu to be added to the `uic-library` organization and the `hub2` team. 
+
+#### Git installation on local computer
+
+There are several editing options explained further in the `How to edit GitHub Pages` section. Mac computers will already have git installed by default. Windows users should install `Git for Windows` if they want to work on their local computer. 
+
+## Basics of GitHub Pages
+
+It's recommended to review the following for working in GitHub Pages:
+
+* Version Control with Git
+* Using GitHub 
+* Markdown
 * Relative paths
+* More on GitHub Pages (if you're curious)
 
-### How to edit GitHub Pages
+## How to edit GitHub Pages
 
 There are two ways of customizing your website. You can either:
 
@@ -72,9 +87,8 @@ Alternatively, you can [download and install the GitHub Desktop application](htt
 
 \* Highly recommend becoming comfortable using Git in command line at least for adding, commiting, previewing, and pushing changes. It can take a long time for a push to load on GitHub oneline and to be able to see the change to the website.  
 
-### Files to edit
 
-FIXME add picture of the files to edit
+## GitHub Pages Workshop Website Setup
 
 ### Using the workshop template
 
@@ -84,19 +98,41 @@ FIXME add picture of the files to edit
 2.  On this page (<https://github.com/uic-library/workshop-template>),
     click on the green "Use this template" button (top right). **Please _do not fork this repository directly on GitHub._**
 
-3.  Choose UIC Libray as the owner for the repository UNLESS you are just  practicing or practicing with the repository (Only Admins can delete repository's in the UIC Library's organization)
+3.  Choose UIC Libray as the owner for the repository UNLESS you are just
+    practicing or practicing with the repository (Only Admins can delete       repository's in the UIC Library's organization)
 
-### Site URL
+4. Always edit or merge edits into the `gh-pages` branch. This is the branch 
+   that will be rendered as a live website
+
+### Repository Configurations
 
 GitHub Pages sites are formatted as `https://GITHUB_USERNAME.github.io/REPOSITORY_NAME`.
 For example, if the URL for your repository is `https://github.com/uic-library/Introduction-Digital-Scholarship`,
 the URL for its website will be `http://uic-library.github.io/Introduction-Digital-Scholarship`.
 
-* [] Set the site url: Your new website will be rendered at `https://uic-library.github.io/<workshop-repo-name>`. *To set the URL on GitHub, click the gear wheel button next to About on the right of the repository landing page. You will have to manually enter the url even though a repository at https://github.com/uic-library/workshop-repo-name/ will render automatically at the URL https://uic-library.github.io/<workshop-repo-name>.
-* [] Add a description of the workshop
+* [ ] Set the site url: Your new website will be rendered at `https://uic-library.github.io/<workshop-repo-name>`. *To set the URL on GitHub, click the gear wheel button next to About on the right of the repository landing page. You will have to manually enter the url even though a repository at https://github.com/uic-library/workshop-repo-name/ will render automatically at the URL https://uic-library.github.io/<workshop-repo-name>.
+* [ ] Add a description of the workshop
 * [ ] [Add relevant topic tags to your lesson repository][cdh-topic-tags].
 
 FIXME add image of this section
+
+### Sharing & Visibility for Hub team
+
+share with hub2 and whoever is administrator
+
+### Make the Website Public
+
+Make GitHub Pages Public
+Make sure url is set according to above instructions
+Go into settings > Pages > and choose "Public"
+
+until then, will render at random url
+
+Error - you may get a 404 error when you go to the site after setting it as public. That is an issue with your browser cache, will resolve within a few days. Force reset of browser cache OR open in incognito window. 
+
+### Files to edit to build workshop website
+
+FIXME add picture of the files to edit
 
 
 ## Configuration File `_config.yml`
@@ -123,108 +159,53 @@ You should not need to modify any of the other variable values in `_config.yml`.
 Your workshop's home page lives in `index.md`,
 which must define the values below in its header.
 
-### For online workshops
+* [ ] add a description to the home page
 
-If the workshop is online, follow the same instructions as above with the
-following modifications:
+* [ ] add the workshop goals to the home page
 
-### Home Page: Description
-
-### Home Page: Goals
-
-### Home Page: Pre-requisites
-
-### Home Page: Workshop Content
-
-By default, the template displays the typical schedule for your workshop based on
-the values of the variables set in the `_config.yml`. If you need to  make
-minor modifications to this schedule, you can edit the `schedule.html` file
-found in the sub-folder of the `_includes` folder that matches the type of
-workshop you will be teaching  (`dc`, `lc`, or `swc`).
-
-If you wish to create your own custom schedule, an empty template is available in
-`_includes/custom-schedule.html`. In this file, we provide the structure for a
-4-day workshop as it is often used for online workshops. To use this custom
-schedule instead of the one provided by default in the template, delete the
-block of code found under the "Schedule" header in the `index.md` file and 
-replace it with`{% raw %}{% include custom-schedule.html %}{% endraw %}`.
-
-The schedule is formatted using a table. If you would like to learn more about
-how to write tables in HTML, here is an [HTML table overview from
-Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table) and
-the [HTML tables chapter from w3schools](https://www.w3schools.com/html/html_tables.asp).
-
-For pilot workshops, some placeholder text including a link to the lesson homepage
-will be displayed instead of a schedule table.
-The lesson homepage will contain estimated timings for teaching the lesson.
-Use the approach described above for `_includes/custome-schedule.html`
-if you would like to create a schedule table to replace this text.
-
-### Home Page: Recording
+* [ ] List the pre-requisites on the home page. either workshops that students  should attend first, or concepts they should know before attending.
 
 * [ ] add the workshop recording by navigating to where it's located in Box, copy the ID from the video sharelink (see image below) and paste into the BoxId field in the yaml in index.md
 ![Copy ID from Box Share Link for Recordings](fig/sharelink-boxId.PNG)
   * Alternatively, if there is no recording ready to post, comment out the recording section with `{% comment %}` and `{% endcomment %}` until there is a recording to add.
 
-### Home Page: Survey
+* [ ] update the survey link each semester. Check to make sure the correct survey is linked
 
-Change out the survey link each semester so the correct survey is linked on the page.
-
-### Home Page: Next up
-
-Link related workshops that students can take next with a link []():
+* [ ] add related workshops to "Next up" section. Link related workshops that students can take next with a link []():
 i.e. [Next Workshop](https://uic-library.github.io/next-workshop)
 
-## Setup Page
+*Note workshop content will display automatically from the titles of the workshop pages, estimated times, and objectives.
 
-#### If you need to remove tools
+## Setup Page (`setup.md`)
 
-If you need to remove any of the instructions for the default
-set of tools,
-you can delete lines that include these instructions in
-the `_includes/swc/setup.html` file.
+* [ ] add installation instructions
 
-#### If you need to add tools
+1. If you need to add tools:
 
-If you need to add installation instructions for other tools,
-we provide installation instructions for SQL and OpenRefine.
-To make them appear on your workshop website,
-you can move the `{% raw %}{% include %}{% endraw %}` statements outside the comment
-block in `_includes/swc/setup.html`.
+ If you need to add installation instructions for other tools,
+ you can use the `{% raw %}{% include %}{% endraw %}` statements for the tools located in `_includes/install_instructions/` folder. in the format:
 
-If you need to add installation instructions for other tools,
-you will need to write your own. You can use installation instructions
-for other tools located in the `_includes/install_instructions/` folder
-as examples.
+ `{% raw %}{% include install_instructions/<install-file-name.html>%}{% endraw %}`
 
-### Data Carpentry workshops
+ If you need to add installation instructions for tools that do not currently have installation instructions, you will need to write your own in html in the `install_instructions` folder. You can use installation instructions
+ for other tools located in the `_includes/install_instructions/` folder
+ as examples.
 
-For Data Carpentry workshops,
-installation instructions live on the workshop overview page for each curriculum.
-Instead of including installation instructions in the workshop template,
-the workshop template includes links to these instructions.
-The correct link will be displyed
-when using the appropriate combination of values
-for the `curriculum`  and `flavor` variables
-in the `_config.yml` file.
+2.  If you need to remove tools:
 
-### Library Carpentry workshops
+ If you need to remove any of the instructions for the default set of tools,
+ you can delete lines that include these instructions in
+ the `setup.md` file.
 
-By default, Library Carpentry workshop websites
-include installation instructions for the Bash shell and Git.
+ for example, delete:
 
-You may need to add installation instructions for additional tools
-you will be using during your workshop
-by editing the `_includes/lc/setup.html` file.
-You can either write your own instructions using the ones
-provided in `_includes/lc/setup.html` as an example,
-or, if you are using tools that already have installation instructions
-provided for Software Carpentry,
-you can add `{% raw %}{% include install_instructions/<filename.html> %}{% endraw %}`
-where `<filename.html>` needs to be replaced by one of the files
-in the `_includes/install_instructions` folder.
+ `{% raw %}{% include install_instructions/r.html%}{% endraw %}`
 
-## Episodes
+* [ ] link data files, script files, or other supporting documentation
+
+* [ ] if applicable, add a description of the data being used in the workshop so that students have context of what you will be teaching with.
+
+## Workshop Content Pages `_episodes/`
 
 * [ ] make copies to match the number of parts your workshop will have by creating
   copies of `\_episodes/01-introduction.md`. Files should be named according to 
@@ -236,20 +217,20 @@ in the `_includes/install_instructions` folder.
     make sure to use .PNG in the markdown image link. 
 * [ ] add other workshop files to the `files` folder (i.e. data files, script files) \*large data files will need to be zipped or linked to outside source, file size limit is 25 MB.
 
-## Images
+## Images `_fig/`
 
 * [ ] add images for your workshop content to the `fig` folder. Good convention
   is naming each image according to the episode file it's located in `0X-short-description.png`
     \*Note: you can use png and jpeg files, but they are case sensitive, so if your file is .PNG 
     make sure to use .PNG in the markdown image link. 
 
-## Files (setup files, scripts, data files etc.)
+## Files `files/`
 
 * [ ] add other workshop files to the `files` folder (i.e. data files, script files) \*large data files will need to be zipped or linked to outside source, file size limit is 25 MB. 
 
-## Additional Resources
+## Additional Resources `more-resources.md`
 
-## References
+## References `reference.md`
 
 ## Troubleshooting -- FIXME if transferring to UIC Library gets messed up
 
